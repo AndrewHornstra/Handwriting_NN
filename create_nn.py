@@ -16,7 +16,7 @@ eta = 0.4
 NN_struct = []
 input_layer = 784
 output_layer = 10
-hidden_layers = [100, 123]
+hidden_layers = [100]
 NN_struct.append(input_layer)
 for layer in hidden_layers:
     NN_struct.append(layer)
