@@ -13,10 +13,10 @@ Typing 3.6.6 (dependency easily removed if necessary)
 
 
 ### Requirements
-To run, this relies on the mnist.py script being run and stored in the same directory as handwritten_digits.py. This was is code written by [hsjeong5](https://github.com/hsjeong5/) located in their [MNIST-for-Numpy](https://github.com/hsjeong5/MNIST-for-Numpy) respository. Prior to running, the code must be altered to have the data formatted for the neural network. The altered code is in the MNIST folder.
+To run, this relies on the mnist.py script being run and stored in the same directory as handwritten_digits.py. This was is code written by [hsjeong5](https://github.com/hsjeong5/) located in their [MNIST-for-Numpy](https://github.com/hsjeong5/MNIST-for-Numpy) respository. Prior to running, the code had to be altered to have the data formatted for this neural network. The altered code is in the MNIST folder.
 
 ### Running
-To run, put all provided files in this repository into the same directory then run create_nn.py. The parameters can be altered as needed.
+To run, put all provided files in this repository into the same directory then run mnist.py followed by create_nn.py. The parameters can be altered as needed.
 
 The neural network will be saved as a file with the .pkl extension which can be loaded using
 ```
