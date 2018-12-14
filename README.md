@@ -4,8 +4,11 @@ Another neural network done in Python 3.7. Run on Windows 10 and MacOS 10.14 Moj
 
 ## Dependencies
 Python 3.7
+
 Pickle 4.0
+
 NumPy 1.15.4
+
 Typing 3.6.6 (dependency easily removed if necessary)
 
 
