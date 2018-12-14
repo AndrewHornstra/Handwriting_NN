@@ -20,7 +20,7 @@ train_data = np.array(list(zip(train_images, train_labels)))
 test_data = np.array(list(zip(test_images, test_labels)))
 
 # Load the provided NN object.
-with open("SNN_1_20_0.4_HL_[100, 123].pkl", 'rb') as f:
+with open("SNN_1_20_0.4_HL_[100].pkl", 'rb') as f:
     new_object = pickle.load(f)
 
 # Print the results. In this provided case, the NN was trained once and had
