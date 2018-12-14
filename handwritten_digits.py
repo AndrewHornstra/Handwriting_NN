@@ -45,15 +45,12 @@ class Network:
         nabla_w = [np.zeros(w.shape) for w in self.weights]
         for x, y in mini_batch:
             delta_nabla_b, delta_nabla_w = self.backprop(x, y)
-            # print(delta_nabla_w[0])
             nabla_b = [nb + dnd for nb, dnd in zip(nabla_b, delta_nabla_b)]
             nabla_w = [nw + dnw for nw, dnw in zip(nabla_w, delta_nabla_w)]
-        # old = np.array(self.weights.copy())
         self.weights = [w - (eta/len(mini_batch)*nw)
                         for w, nw in zip(self.weights, nabla_w)]
         self.biases = [b - (eta/len(mini_batch)*nb)
                        for b, nb in zip(self.biases, nabla_b)]
-        # print(np.array(self.weights) - old)
 
     def vectorize(self, i: int) -> List:
         vec = np.zeros((10, 1))
@@ -92,3 +89,6 @@ class Network:
     def save(self, filename: str) -> None:
         with open(f'{filename}', 'wb') as f:
             pickle.dump(self, f)
+
+    def identify(self, x: List) -> int:
+        return self.feedforward(x).argmax(0)[0]
